@@ -1,0 +1,169 @@
+*{margin: 0;
+padding: 0;
+font-size: arial 9;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{ 
+padding: 0.5em 1em;
+background: rgb(64, 58, 77);
+color:white;
+display: flex;
+justify-content: left;
+width: 90vw;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1em;
+border-radius: 6px;
+}
+
+.logo{
+    padding: 1.5em;
+    display: flex;
+    justify-content:right;
+    width: 100%;
+    text-align: right;
+}
+.imagen{ 
+
+    border-radius: 4px;
+    width: 150px;
+    justify-content: left;
+    
+    }
+
+.navbar{
+    background: rgb(134, 132, 138);
+    color: rgb(19, 19, 17);
+    width: 90vw;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border-radius: 6px;
+    }
+.navbar ul li{
+text-align: right; /*Aca el texto no me mueve a la Izquierda*/
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 25px;
+    color: white;
+
+}
+.navbar ul li a:hover{
+    color: rgb(27, 44, 44);
+} 
+#contenedor{
+    width: 100%;
+    margin-bottom: 5em;
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-around;
+
+}  
+#contenedor img {
+    width: 100%;
+}
+
+
+.primero{
+    margin-top: 1em;
+    background: rgb(147, 216, 213);
+    width: 24%;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.segundo{
+    margin-top: 1em;
+    background: rgb(9, 87, 83);
+    width: 24%;
+    padding: 3%;
+    box-sizing: border-box ;
+    border-radius: 4px;
+}
+.tercero{
+    margin-top: 1em;
+    background: rgb(147, 216, 213);
+    width: 24%;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+.footer{
+    margin-top: 8em;
+    border-top: 5px solid white;
+    padding: 2em 3em;  
+    background: rgb(138, 143, 150);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 6px;
+}
+.data{
+    
+    background: rgb(215, 231, 218);
+    padding: 2em;
+    color: black;
+    border-radius: 6px;
+    width: 95%;
+}
+
+.map{
+    width: 30%;   
+}
+/* las @media query no me toman */
+
+@media screen and (min-width:990px) and (max-width:1200px){ 
+    body { 
+        background: rgb(127, 133, 136);
+    }
+    }
+@media screen and (min-width:660px) and (max-width:989px){ 
+    body { 
+    background: rgb(118, 184, 214);
+    }
+    .navbar{
+        text-align: center;
+    }
+    }
+@media screen and (min-width:1px) and (max-width:559px){ 
+    body { 
+        background: rgb(49, 121, 28);
+    }
+    header{
+        flex-wrap: wrap;
+        text-align: center;
+        }
+    .navbar{
+        text-align: center;
+        font-size: small;
+    }
+        .primero{
+            width: 80%;
+            overflow: hidden;
+        }
+        .segundo{
+            width: 50%;
+            overflow: hidden;
+
+        }
+        .tercero{
+            width: 50%;
+            overflow: hidden;
+
+        }
+    }
+
+
